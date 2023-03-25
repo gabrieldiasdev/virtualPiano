@@ -7,7 +7,7 @@ const volumeSwitcher = document.querySelector('#volume');
 let audioVolume = 0.5;
 
 const playNote = (note) => {
-    const audio = new Audio(`../../vendor/notes/${note}.wav`);
+    const audio = new Audio(`vendor/notes/${note}.wav`);
     audio.volume = audioVolume;
     audio.play();
 };
